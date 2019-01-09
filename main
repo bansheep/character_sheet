@@ -86,7 +86,8 @@ def roll_stats_modifiers(roll):
         
     return roll_stats
 
-#Need to work on this ...
+#Uses a while loop to ask user to asign abilities to the roll
+#Controls for mispelling and trying to assign more than one number to an ability
 def check_stats(roll, i, y, character_stats, abilities):
     
 
@@ -154,7 +155,7 @@ def check_stats(roll, i, y, character_stats, abilities):
             print("Try again. Please check spelling.")
         
         print(character_stats)
-        #z = len(abilities)
+
 #This builds the character stats. User chooses order of abilities based 
 #on scores from highest to lowest. A dictionary is built that has
 #the ability (such as Charisma) as the key and the stats as the value.
@@ -224,16 +225,5 @@ def create_character_sheet():
 #
 #
 char_one_ability_sheet = create_character_sheet()
-# print(char_one_ability_sheet)
-
-
-# print ("Strength score: " + str(char_one_ability_sheet.get("Strength")[0]))
-
-# strength_math = char_one_ability_sheet.get("Strength")[0] + 3
-
-# print("Total: " + str(strength_math))
-
-#for key, value in char_one_ability_sheet.item():
-#    print(key + ": " + value)
 
 print(char_one_ability_sheet)
